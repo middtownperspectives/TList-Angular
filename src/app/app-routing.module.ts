@@ -10,7 +10,7 @@ import {
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent},
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'faq', component: FaqComponent},
   { path: 'tea', component: SingleTeaComponent},
   { path: 'all-teas', component: TeasComponent},
