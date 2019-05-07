@@ -1,6 +1,6 @@
 # TList
 
-[Link](https://middtownperspectives.github.io/TList-Angular)
+[Link](https://middtownperspectives.github.io/TList-Angular/TList-Angular/)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.0.
 
