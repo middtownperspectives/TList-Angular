@@ -66,17 +66,23 @@ THE SOFTWARE.
 
 @angular/material/core
 
+@angular/material/form-field
+
 @angular/material/grid-list
 
 @angular/material/icon
 
 @angular/material/list
 
-@angular/material/menu
+@angular/material/radio
+
+@angular/material/select
 
 @angular/material/sidenav
 
 @angular/material/toolbar
+
+@angular/material/tree
 
 @angular/platform-browser
 MIT
