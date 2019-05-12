@@ -6,6 +6,7 @@ import {
   HomeComponent,
   SingleTeaComponent,
   TeasComponent,
+  ContactComponent,
 } from './pages/pages';
 
 const routes: Routes = [
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'faq', component: FaqComponent},
   { path: 'tea', component: SingleTeaComponent},
   { path: 'all-teas', component: TeasComponent},
+  { path: 'contact', component: ContactComponent},
 
 ];
 

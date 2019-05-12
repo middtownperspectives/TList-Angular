@@ -18,19 +18,26 @@ import {
          MatListModule,
          MatGridListModule,
          MatCardModule,
-         MatMenuModule } from '@angular/material';
+         MatMenuModule, MatTreeModule, MatInputModule, MatSelectModule, MatRadioModule } from '@angular/material';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { TlistDashboardComponent } from './components/tlist-dashboard/tlist-dashboard.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { FaqTreeComponent } from './components/faq-tree/faq-tree.component';
+import { ContactFormComponent } from './components/contact-form/contact-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     FaqComponent,
+    FaqTreeComponent,
     HomeComponent,
     TeasComponent,
     SingleTeaComponent,
     NavigationComponent,
     TlistDashboardComponent,
+    ContactComponent,
+    ContactFormComponent,
   ],
   imports: [
     BrowserModule,
@@ -45,7 +52,12 @@ import { TlistDashboardComponent } from './components/tlist-dashboard/tlist-dash
     MatListModule,
     MatGridListModule,
     MatCardModule,
-    MatMenuModule
+    MatMenuModule,
+    MatTreeModule,
+    MatInputModule,
+    MatSelectModule,
+    MatRadioModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
