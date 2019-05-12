@@ -4,16 +4,16 @@ import { Routes, RouterModule } from '@angular/router';
 import {
   FaqComponent,
   HomeComponent,
-  SingleTeaComponent,
   TeasComponent,
   ContactComponent,
+  TeaComponent,
 } from './pages/pages';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent},
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'faq', component: FaqComponent},
-  { path: 'tea', component: SingleTeaComponent},
+  { path: 'tea-details/:id', component: TeaComponent},
   { path: 'all-teas', component: TeasComponent},
   { path: 'contact', component: ContactComponent},
 
