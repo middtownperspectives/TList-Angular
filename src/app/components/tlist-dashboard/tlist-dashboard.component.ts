@@ -22,7 +22,7 @@ export class TlistDashboardComponent {
     map(({ matches }) => {
       if (matches) {
         return [
-          { id: 1, title: 'Jazimine Blossom', cols: 2, rows: 1, img: '/assets/img/aromatic-concoction-cup-159203.jpg'},
+          { id: 1, title: 'Jazimine Blossom', cols: 2, rows: 1, img: './assets/img/aromatic-concoction-cup-159203.jpg'},
           { id: 2, title: 'Earl Grey', cols: 2, rows: 1, img: './assets/img/aromatic-close-cup-1417945.jpg'},
           { id: 3, title: 'Honest Garden', cols: 2, rows: 1, img: './assets/img/beverage-chiang-mai-cup-1581484.jpg'},
           { id: 4, title: 'Prickly Spice', cols: 2, rows: 1, img: './assets/img/aroma-background-colors-953206.jpg'}
