@@ -7,7 +7,7 @@
       <div class="row">
         <div class="col">
           <mat-form-field class="full-width">
-            <input matInput placeholder="Recipe Name" formControlName="recipeName">
+            <input matInput placeholder="Recipe Name">
           </mat-form-field>
         </div>
       </div>
@@ -32,7 +32,7 @@
       <div class="row">
         <div class="col">
           <mat-form-field class="full-width">
-            <input matInput placeholder="Image Link" formControlName="imageLink">
+            <input matInput placeholder="Image Link">
             <mat-error *ngIf="addressForm.controls['address'].hasError('required')">
               Image Link <strong>required</strong>
             </mat-error>
@@ -42,14 +42,14 @@
       <div class="row">
         <div class="col">
           <mat-form-field class="full-width">
-            <textarea matInput placeholder="Description" formControlName="Description"></textarea>
+            <textarea matInput placeholder="Description"></textarea>
           </mat-form-field>
         </div>
       </div>
       <div class="row">
         <div class="col">
           <mat-form-field  class="full-width">
-            <textarea matInput placeholder="Directions" formControlName="Directions"></textarea>
+            <textarea matInput placeholder="Directions"></textarea>
           </mat-form-field>
         </div>
       </div>

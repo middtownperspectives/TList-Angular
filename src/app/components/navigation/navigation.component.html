@@ -7,7 +7,7 @@
     <mat-nav-list>
       <a mat-list-item routerLink="/all-teas">Teas</a>
       <a mat-list-item routerLink="/faq">FAQ</a>
-      <a mat-list-item routerLink="/contact">Contact</a>
+      <a mat-list-item routerLink="/contact">Contribute</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -20,7 +20,7 @@
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span mat-list-item routerLink="/">t-list</span>
+      <span mat-list-item routerLink="/">t-list<img class="logo" src="../../../assets/img/Tlist-Icon-png.png"/></span>
     </mat-toolbar>
 
     <!-- Add Content Here -->
