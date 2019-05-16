@@ -1,13 +1,13 @@
-import { Component, Output } from '@angular/core';
-import { map } from 'rxjs/operators';
+import { Component, EventEmitter, Output } from '@angular/core';
+import { map, single } from 'rxjs/operators';
 import { Breakpoints, BreakpointObserver } from '@angular/cdk/layout';
-import { EventEmitter } from 'events';
 import { TeaServiceService } from '../../services/tea-service.service';
 
 @Component({
   selector: 'app-tlist-dashboard',
   templateUrl: './tlist-dashboard.component.html',
-  styleUrls: ['./tlist-dashboard.component.scss']
+  styleUrls: ['./tlist-dashboard.component.scss'],
+  providers: [TeaServiceService ]
 })
 
 export class TlistDashboardComponent {
@@ -15,7 +15,7 @@ export class TlistDashboardComponent {
   public selectedTea: any;
   public subscription: any;
 
-  @Output() singleTea = new EventEmitter();
+  // @Output() singleTea = new EventEmitter();
 
   /** Based on the screen size, switch from standard to one column per row */
   cards = this.breakpointObserver.observe(Breakpoints.Handset).pipe(
@@ -42,7 +42,8 @@ export class TlistDashboardComponent {
 
   public showTea(singleTea: any): void {
     this.selectedTea = singleTea;
-    this.singleTea.emit(singleTea);
-    console.log(singleTea);
+    this.teaService.selectedTea.emit(singleTea);
+    // console.log(singleTea);
+    this.teaService.logToConsole(singleTea);
   }
 }

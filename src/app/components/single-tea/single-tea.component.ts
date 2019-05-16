@@ -1,17 +1,22 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { TlistDashboardComponent } from '../tlist-dashboard/tlist-dashboard.component';
+import { TeaServiceService } from 'src/app/services/tea-service.service';
 
 @Component({
   selector: 'app-single-tea',
   templateUrl: './single-tea.component.html',
-  styleUrls: ['./single-tea.component.scss']
+  styleUrls: ['./single-tea.component.scss'],
+  providers: [TeaServiceService]
 })
 export class SingleTeaComponent implements OnInit {
 
   public aSingleTea: any;
   @Input() tea: any;
 
-  constructor() { }
+  constructor(private teaService: TeaServiceService) {
+    this.teaService.selectedTea.subscribe(
+      (singleTea: any) => console.log(`single tea service ${singleTea}`)
+    );
+  }
 
   ngOnInit() {
     console.log(this.tea);
