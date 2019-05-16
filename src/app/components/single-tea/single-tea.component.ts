@@ -14,7 +14,7 @@ export class SingleTeaComponent implements OnInit {
 
   constructor(private teaService: TeaServiceService) {
     this.teaService.selectedTea.subscribe(
-      (singleTea: any) => console.log(`single tea service ${singleTea}`)
+      (singleTea: any) => this.aSingleTea = singleTea
     );
   }
 

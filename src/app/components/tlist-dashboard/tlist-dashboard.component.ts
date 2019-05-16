@@ -38,12 +38,16 @@ export class TlistDashboardComponent {
     })
   );
 
-  constructor(private breakpointObserver: BreakpointObserver, private teaService: TeaServiceService) {}
+  constructor(private breakpointObserver: BreakpointObserver, private teaService: TeaServiceService) {
+    teaService.teaSelected$.subscribe(
+      tea => {
+        this.selectedTea = tea;
+      });
+  }
 
   public showTea(singleTea: any): void {
-    this.selectedTea = singleTea;
-    this.teaService.selectedTea.emit(singleTea);
-    // console.log(singleTea);
-    this.teaService.logToConsole(singleTea);
+    // this.selectedTea = singleTea;
+    console.log(this.selectedTea);
+
   }
 }
