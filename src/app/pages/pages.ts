@@ -4,3 +4,4 @@ export * from '../components/single-tea/single-tea.component';
 export * from './teas/teas.component';
 export * from './contact/contact.component';
 export * from  './tea/tea.component';
+export * from './gmap/gmap.component';

@@ -14,8 +14,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TeaListMaterialModule } from './modules/tealist-material.module';
 
-
 import {TeaServiceService } from './services/tea-service.service';
+
+import {AgmCoreModule} from '@agm/core';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,10 @@ import {TeaServiceService } from './services/tea-service.service';
     MatSelectModule,
     MatRadioModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyBnyjzLrKYnf6zDMs2LaTFZpmxhHjERT2c'
+    })
   ],
   providers: [TeaServiceService],
   bootstrap: [AppComponent]
