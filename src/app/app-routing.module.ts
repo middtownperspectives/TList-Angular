@@ -7,6 +7,7 @@ import {
   TeasComponent,
   ContactComponent,
   TeaComponent,
+  GmapComponent,
 } from './pages/pages';
 
 const routes: Routes = [
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'tea-details/:id', component: TeaComponent},
   { path: 'all-teas', component: TeasComponent},
   { path: 'contact', component: ContactComponent},
+  { path: 'map', component: GmapComponent}
 
 ];
 

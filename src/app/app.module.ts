@@ -6,7 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatGridListModule, MatCardModule,
          MatMenuModule, MatTreeModule, MatInputModule, MatSelectModule, MatRadioModule } from '@angular/material';
 
-import { ContactComponent, FaqComponent, HomeComponent, TeasComponent, TeaComponent} from './pages/pages';
+import { ContactComponent, FaqComponent, HomeComponent, TeasComponent, TeaComponent, GmapComponent} from './pages/pages';
 import { ContactFormComponent, FaqTreeComponent, TlistDashboardComponent, NavigationComponent,
          SingleTeaComponent } from './components/components';
 
@@ -31,6 +31,7 @@ import {AgmCoreModule} from '@agm/core';
     ContactComponent,
     ContactFormComponent,
     TeaComponent,
+    GmapComponent,
   ],
   imports: [
     BrowserModule,
